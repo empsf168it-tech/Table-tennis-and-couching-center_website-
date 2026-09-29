@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy Gallery | Velocity TT Coaching Center</title>
+    <meta name="description"
+        content="View our academy media gallery. Browse photos of coaching sessions, matches, club events, and training programs.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;430&family=Poppins:wght@500;540;580&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=1.1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195 50" width="195" height="50" style="height: 40px; width: auto; max-width: 195px;">
+                    <defs>
+                        <linearGradient id="velocityGrad" x1="0" y1="1" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#4F46E5" />
+                            <stop offset="100%" stop-color="#8B5CF6" />
+                        </linearGradient>
+                        <linearGradient id="ballGrad" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#FFFFFF" />
+                            <stop offset="40%" stop-color="#E0E7FF" />
+                            <stop offset="100%" stop-color="#818CF8" />
+                        </linearGradient>
+                        <linearGradient id="trailGrad" x1="0" y1="1" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.15" />
+                            <stop offset="100%" stop-color="#06B6D4" stop-opacity="1" />
+                        </linearGradient>
+                        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#4F46E5" flood-opacity="0.4" />
+                        </filter>
+                    </defs>
+                    <g transform="translate(4, 2)">
+                        <path d="M 22,7 L 7,35 C 6.5,36 7.2,37.5 8.3,37.5 L 35.7,37.5 C 36.8,37.5 37.5,36 37,35 L 22,7 Z" fill="url(#velocityGrad)" />
+                        <path d="M 22,12 L 12,34 L 32,34 Z" fill="#1E1B4B" opacity="0.18" />
+                        <path d="M 22,7 L 22,37.5" stroke="var(--surface)" stroke-width="2.2" opacity="0.4" stroke-linecap="round" />
+                        <path d="M 5,34 C 4,18 18,8 33,14" stroke="url(#trailGrad)" stroke-width="2.8" stroke-linecap="round" fill="none" />
+                        <circle cx="33" cy="14" r="5" fill="url(#ballGrad)" filter="url(#glow)" />
+                        <path d="M 30.5,12 A 5,5 0 0,0 34,17" stroke="#FFF" stroke-width="0.6" fill="none" opacity="0.8" />
+                    </g>
+                    <text x="50" y="24" font-family="'Poppins', sans-serif" font-weight="800" font-size="14.5" fill="var(--text)" letter-spacing="1">VELOCITY TT</text>
+                    <text x="50" y="38" font-family="'Poppins', sans-serif" font-weight="600" font-size="8.2" fill="#8B5CF6" letter-spacing="1.2">COACHING CENTER</text>
+                </svg>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home 1</a>
+                <a href="home2.html">Home 2</a>
+                <a href="about.html">About Us</a>
+                <a href="plans.html">Memberships</a>
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <div class="nav-controls-group">
+                    <button id="rtl-toggle" class="control-btn" title="Toggle RTL/LTR">RTL</button>
+                    <div class="control-separator"></div>
+                    <button id="theme-toggle" class="control-btn" title="Toggle Theme">
+                        <i data-lucide="sun" class="theme-icon-sun"></i>
+                        <i data-lucide="moon" class="theme-icon-moon"></i>
+                    </button>
+                </div>
+                <button id="mobile-menu-btn" class="toggle-btn mobile-only" title="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <button id="mobile-menu-close" class="close-menu-btn" title="Close Menu">
+            <i data-lucide="x"></i>
+        </button>
+        <nav class="mobile-nav-links">
+            <a href="index.html">Home 1</a>
+            <a href="home2.html">Home 2</a>
+            <a href="about.html">About Us</a>
+            <a href="plans.html">Memberships</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Section 1: Hero -->
+    <section class="hero" style="min-height: 48vh; padding: 120px 0 60px;">
+        <div class="hero-bg" style="background-image: url('https://c1.wallpaperflare.com/preview/920/420/10/table-tennis-ping-pong-passion-sport.jpg');"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Academy Gallery: <br><span style="color: var(--accent);">Life at Velocity TT.</span></h1>
+                <p>Browse through photos of coaching sessions, competitive league matches, developmental junior classes, and training events.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Filterable Grid -->
+    <section>
+        <div class="container">
+            <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap;" id="gallery-filters">
+                <button class="btn btn-primary filter-btn active" data-filter="all">All Photos</button>
+                <button class="btn btn-outline filter-btn" data-filter="coaching">Coaching Sessions</button>
+                <button class="btn btn-outline filter-btn" data-filter="matches">Matches & Leagues</button>
+                <button class="btn btn-outline filter-btn" data-filter="events">Club Events</button>
+                <button class="btn btn-outline filter-btn" data-filter="training">Training Programs</button>
+            </div>
+
+            <div class="grid grid-3 reveal" id="gallery-grid" style="transition: all 0.3s ease;">
+                <!-- Item 1 -->
+                <div class="card gallery-item" data-category="coaching">
+                    <img src="https://images.unsplash.com/photo-1511067007398-7e4b90cfa4bc?auto=format&fit=crop&q=80&w=800"
+                        class="card-img" alt="Coaching Session" style="height: 160px; object-fit: cover;">
+                    <h3 style="margin-top: 1rem;">1-on-1 Multiball Drill</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Coach Elena demonstrating high-spin forehand loops.</p>
+                </div>
+                <!-- Item 2 -->
+                <div class="card gallery-item" data-category="matches">
+                    <img src="https://storage.googleapis.com/stupaprodsguscentral/ettu-website-wordpress/2025/06/Franziska_GER_250601_2-scaled.jpg"
+                        class="card-img" alt="League Match" style="height: 160px; object-fit: cover;">
+                    <h3 style="margin-top: 1rem;">Division 1 Finals</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Intense counter-loop rally during the annual championship.</p>
+                </div>
+                <!-- Item 3 -->
+                <div class="card gallery-item" data-category="events">
+                    <img src="https://t4.ftcdn.net/jpg/00/88/86/05/360_F_88860540_Ka1n4w4gjW1K8Sq2JWQHxggPDcm31K1C.jpg"
+                        class="card-img" alt="Club Event" style="height: 160px; object-fit: cover;">
+                    <h3 style="margin-top: 1rem;">Spring Open Ceremony</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Gathering of players and supporters for the tournament kickoff.</p>
+                </div>
+                <!-- Item 4 -->
+                <div class="card gallery-item" data-category="training">
+                    <img src="https://cdn.pixabay.com/photo/2016/02/18/23/26/table-tennis-1208378_1280.jpg"
+                        class="card-img" alt="Junior Training" style="height: 160px; object-fit: cover;">
+                    <h3 style="margin-top: 1rem;">Junior Stance Practice</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Fostering athletic movement and proper ready-stance habits.</p>
+                </div>
+                <!-- Item 5 -->
+                <div class="card gallery-item" data-category="matches">
+                    <img src="https://cdn.pixabay.com/photo/2016/02/18/23/26/table-tennis-1208377_640.jpg"
+                        class="card-img" alt="Tournament Match" style="height: 160px; object-fit: cover;">
+                    <h3 style="margin-top: 1rem;">Under-18 Championship</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Fast-paced backhand blocks during divisional playoffs.</p>
+                </div>
+                <!-- Item 6 -->
+                <div class="card gallery-item" data-category="coaching">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKRWGGLfhQcdwb3I7l3cEnupEx0MIFhOPxig&s"
+                        class="card-img" alt="Stroke Analysis" style="height: 160px; object-fit: cover;">
+                    <h3 style="margin-top: 1rem;">Tactical Video Analysis</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Evaluating paddle contact angle and ball trajectory.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Facility Tour Video / Interactive Showcase -->
+    <section style="background-color: var(--surface);">
+        <div class="container">
+            <div class="grid grid-2 reveal" style="align-items: center; gap: 4rem;">
+                <!-- Video / Facility Showcase Card -->
+                <div class="card" style="padding: 0; overflow: hidden; border: 1px solid var(--border); box-shadow: var(--shadow); position: relative; cursor: pointer; height: 350px;">
+                    <img src="https://cdn.wallpapersafari.com/4/38/ularCe.jpg" alt="Facility Video Thumbnail" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.4); display: flex; align-items: center; justify-content: center;">
+                        <!-- Glassmorphic Play Button -->
+                        <div style="background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(10px); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255, 255, 255, 0.4); transition: transform 0.3s ease;">
+                            <i data-lucide="play" size="32" style="color: white; margin-left: 4px;"></i>
+                        </div>
+                    </div>
+                    <!-- Hover Effect Trigger (CSS zoom via class behavior or inline) -->
+                    <style>
+                        .card:hover img {
+                            transform: scale(1.05);
+                        }
+                        .card:hover div div {
+                            transform: scale(1.1);
+                            background: var(--primary) !important;
+                            border-color: var(--primary) !important;
+                        }
+                    </style>
+                </div>
+                <div class="hq-content">
+                    <span class="hq-subheading" style="color: var(--secondary); font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">OUR TRAINING HEADQUARTERS</span>
+                    <h2 style="font-size: 2.5rem; margin: 1rem 0 1.5rem; line-height: 1.2;">Explore Our World-Class Facility</h2>
+                    <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem;">Take a digital walkthrough of the arena. Our specialized training facility is optimized for competitive match play and intensive multi-ball sessions, featuring premium ITTF tables and high-speed lighting rigs.</p>
+                    
+                    <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+                        <div style="display: flex; gap: 1rem; align-items: center;">
+                            <i data-lucide="check-circle-2" class="hq-check-icon" style="color: var(--primary); flex-shrink: 0;"></i>
+                            <span style="font-weight: 600; font-size: 1rem;">16 Professional ITTF-Approved Tables</span>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: center;">
+                            <i data-lucide="check-circle-2" class="hq-check-icon" style="color: var(--primary); flex-shrink: 0;"></i>
+                            <span style="font-weight: 600; font-size: 1rem;">Non-Slip Joint-Protection Flooring Mats</span>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: center;">
+                            <i data-lucide="check-circle-2" class="hq-check-icon" style="color: var(--primary); flex-shrink: 0;"></i>
+                            <span style="font-weight: 600; font-size: 1rem;">Shadow-Free High-Intensity Sports Lighting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Live Social Wall Feed -->
+    <section>
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <span style="color: var(--primary); font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">SOCIAL FEED</span>
+                <h2 style="font-size: 2.5rem; margin-top: 0.5rem;">Shared Moments #VelocityTT</h2>
+                <p style="color: var(--text-muted);">Follow our official channels for daily training updates, player highlights, and academy life.</p>
+            </div>
+            
+            <!-- 4-Column Social Grid -->
+            <div class="reveal social-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+                <!-- Social Post 1 -->
+                <div style="position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 1; cursor: pointer;" class="social-card">
+                    <img src="https://images.unsplash.com/photo-1511067007398-7e4b90cfa4bc?auto=format&fit=crop&q=80&w=500" alt="Instagram Post" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.7); display: flex; flex-direction: column; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease; color: white;">
+                        <i data-lucide="instagram" style="margin-bottom: 0.5rem;"></i>
+                        <span style="font-weight: 600; font-size: 0.95rem;">@coach_elena</span>
+                        <span style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.25rem;">142 Likes</span>
+                    </div>
+                </div>
+                <!-- Social Post 2 -->
+                <div style="position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 1; cursor: pointer;" class="social-card">
+                    <img src="https://s3.ap-southeast-1.amazonaws.com/images.asianage.com/images/aa-Cover-fhjdil2n1g82avao1uov71udm1-20180408183554.Medi.jpeg" alt="Instagram Post" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.7); display: flex; flex-direction: column; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease; color: white;">
+                        <i data-lucide="instagram" style="margin-bottom: 0.5rem;"></i>
+                        <span style="font-weight: 600; font-size: 0.95rem;">@spin_champs</span>
+                        <span style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.25rem;">295 Likes</span>
+                    </div>
+                </div>
+                <!-- Social Post 3 -->
+                <div style="position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 1; cursor: pointer;" class="social-card">
+                    <img src="https://png.pngtree.com/thumb_back/fh260/background/20241202/pngtree-table-tennis-ball-frozen-above-net-in-arena-image_16728500.jpg" alt="Instagram Post" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.7); display: flex; flex-direction: column; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease; color: white;">
+                        <i data-lucide="instagram" style="margin-bottom: 0.5rem;"></i>
+                        <span style="font-weight: 600; font-size: 0.95rem;">@sam_tt_loop</span>
+                        <span style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.25rem;">89 Likes</span>
+                    </div>
+                </div>
+                <!-- Social Post 4 -->
+                <div style="position: relative; border-radius: 16px; overflow: hidden; aspect-ratio: 1; cursor: pointer;" class="social-card">
+                    <img src="https://t3.ftcdn.net/jpg/01/65/93/12/360_F_165931263_HQ20AIEvU2Uy1RiYQxdqTlrRW6NbYFNg.jpg" alt="Instagram Post" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(15, 23, 42, 0.7); display: flex; flex-direction: column; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease; color: white;">
+                        <i data-lucide="instagram" style="margin-bottom: 0.5rem;"></i>
+                        <span style="font-weight: 600; font-size: 0.95rem;">@velocity_tt_center</span>
+                        <span style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.25rem;">412 Likes</span>
+                    </div>
+                </div>
+            </div>
+            
+            <style>
+                .social-card:hover img {
+                    transform: scale(1.08);
+                }
+                .social-card:hover div {
+                    opacity: 1 !important;
+                }
+            </style>
+        </div>
+    </section>
+
+    <!-- Section 5: Champions Wall / Hall of Fame -->
+    <section style="background-color: var(--surface);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <span style="color: var(--accent); font-weight: 700; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px;">PODIUM FINISHES</span>
+                <h2 style="font-size: 2.5rem; margin-top: 0.5rem;">Our Champions Hall of Fame</h2>
+                <p style="color: var(--text-muted);">Celebrating the outstanding competitive achievements of our resident tournament athletes.</p>
+            </div>
+            
+            <div class="grid grid-3 champions-grid reveal">
+                <!-- Champion 1 -->
+                <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
+                    <div style="height: 240px; overflow: hidden; position: relative;">
+                        <img src="https://images.forbesindia.com/blog/wp-content/uploads//media/images/2023/Oct/img_220013_sharathkamalgettyimages-1242383709_bg.jpg" alt="Marcus Vance" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 12px; left: 12px; background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">STATE CHAMP</div>
+                    </div>
+                    <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+                        <h3 style="margin: 0 0 0.25rem; font-size: 1.3rem;">Marcus Vance</h3>
+                        <p style="color: var(--accent); font-weight: 600; font-size: 0.9rem; margin-bottom: 1rem;">Under-18 Men's Singles Gold</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin: 0;">Joined Velocity TT as a junior in 2023. Under Coach Elena's mentoring, he increased his USATT rating by 400 points and clinched the state title.</p>
+                    </div>
+                </div>
+                <!-- Champion 2 -->
+                <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
+                    <div style="height: 240px; overflow: hidden; position: relative;">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/073/470/411/small/professional-table-tennis-portrait-with-paddle-and-ball-on-dark-background-photo.jpg" alt="Sarah Jenkins" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 12px; left: 12px; background: var(--primary); color: var(--background); padding: 0.25rem 0.75rem; border-radius: 4px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">NATIONAL SILVER</div>
+                    </div>
+                    <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+                        <h3 style="margin: 0 0 0.25rem; font-size: 1.3rem;">Sarah Jenkins</h3>
+                        <p style="color: var(--accent); font-weight: 600; font-size: 0.9rem; margin-bottom: 1rem;">Women's Doubles Runner-Up</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin: 0;">Sarah's high-intensity training regimen at our academy prepared her to dominate the regional circuits and secure her national podium slot.</p>
+                    </div>
+                </div>
+                <!-- Champion 3 -->
+                <div class="card" style="padding: 0; overflow: hidden; display: flex; flex-direction: column; height: 100%;">
+                    <div style="height: 240px; overflow: hidden; position: relative;">
+                        <img src="https://static.vecteezy.com/system/resources/thumbnails/073/470/414/small/focused-table-tennis-serve-technique-with-red-paddle-indoors-photo.jpg" alt="Junior Falcons" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div style="position: absolute; top: 12px; left: 12px; background: var(--primary); color: white; padding: 0.25rem 0.75rem; border-radius: 4px; font-weight: 700; font-size: 0.8rem; text-transform: uppercase;">DIVISIONAL CHAMPIONS</div>
+                    </div>
+                    <div style="padding: 2rem; display: flex; flex-direction: column; flex-grow: 1;">
+                        <h3 style="margin: 0 0 0.25rem; font-size: 1.3rem;">The Junior Falcons</h3>
+                        <p style="color: var(--accent); font-weight: 600; font-size: 0.9rem; margin-bottom: 1rem;">Regional Junior League Winners</p>
+                        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; margin: 0;">Our youth team dominated the regional division league standings, winning 9 of 10 match rounds with outstanding technical play.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- Footer CTA -->
+            <div class="footer-cta reveal">
+                <div>
+                    <h2>Ready to Train Like a Champion?</h2>
+                    <p>Register online today and book your free skill assessment session!</p>
+                </div>
+                <a href="contact.html" class="btn"
+                    style="background: white; color: var(--primary); padding: 1rem 2rem; font-size: 1.1rem;">Book a Trial Session</a>
+            </div>
+
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                        <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195 50" width="195" height="50" style="height: 40px; width: auto; max-width: 195px;">
+                    <defs>
+                        <linearGradient id="velocityGrad" x1="0" y1="1" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#4F46E5" />
+                            <stop offset="100%" stop-color="#8B5CF6" />
+                        </linearGradient>
+                        <linearGradient id="ballGrad" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#FFFFFF" />
+                            <stop offset="40%" stop-color="#E0E7FF" />
+                            <stop offset="100%" stop-color="#818CF8" />
+                        </linearGradient>
+                        <linearGradient id="trailGrad" x1="0" y1="1" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.15" />
+                            <stop offset="100%" stop-color="#06B6D4" stop-opacity="1" />
+                        </linearGradient>
+                        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#4F46E5" flood-opacity="0.4" />
+                        </filter>
+                    </defs>
+                    <g transform="translate(4, 2)">
+                        <path d="M 22,7 L 7,35 C 6.5,36 7.2,37.5 8.3,37.5 L 35.7,37.5 C 36.8,37.5 37.5,36 37,35 L 22,7 Z" fill="url(#velocityGrad)" />
+                        <path d="M 22,12 L 12,34 L 32,34 Z" fill="#1E1B4B" opacity="0.18" />
+                        <path d="M 22,7 L 22,37.5" stroke="var(--surface)" stroke-width="2.2" opacity="0.4" stroke-linecap="round" />
+                        <path d="M 5,34 C 4,18 18,8 33,14" stroke="url(#trailGrad)" stroke-width="2.8" stroke-linecap="round" fill="none" />
+                        <circle cx="33" cy="14" r="5" fill="url(#ballGrad)" filter="url(#glow)" />
+                        <path d="M 30.5,12 A 5,5 0 0,0 34,17" stroke="#FFF" stroke-width="0.6" fill="none" opacity="0.8" />
+                    </g>
+                    <text x="50" y="24" font-family="'Poppins', sans-serif" font-weight="800" font-size="14.5" fill="var(--text)" letter-spacing="1">VELOCITY TT</text>
+                    <text x="50" y="38" font-family="'Poppins', sans-serif" font-weight="600" font-size="8.2" fill="#8B5CF6" letter-spacing="1.2">COACHING CENTER</text>
+                </svg>
+                    </a>
+                    <p style="color: var(--text-muted);">Helping players of every age improve technique, confidence, and competitive performance through expert table tennis coaching.</p>
+                    <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+                        <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="plans.html">Memberships</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Programs</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="plans.html">Beginner Coaching</a></li>
+                        <li><a href="plans.html">Junior Development</a></li>
+                        <li><a href="plans.html">Advanced Training</a></li>
+                        <li><a href="plans.html">Weekend Clinics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="about.html">Club Facilities</a></li>
+                        <li><a href="home2.html">League Schedule</a></li>
+                        <li><a href="plans.html">Common FAQs</a></li>
+                        <li><a href="contact.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Velocity TT Coaching Center. All rights reserved. | <a href="#" style="text-decoration: underline;">Terms of Service</a> | <a href="#" style="text-decoration: underline;">Privacy Policy</a></p>
+                <a href="#" class="back-to-top" title="Back to Top">
+                    <i data-lucide="arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery Filter Logic
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active from all buttons
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('btn-primary');
+                        btn.classList.add('btn-outline');
+                    });
+
+                    // Add active to clicked button
+                    button.classList.add('btn-primary');
+                    button.classList.remove('btn-outline');
+
+                    const filterValue = button.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 50);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.95)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

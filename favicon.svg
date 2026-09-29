@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <defs>
+    <linearGradient id="favVelocityGrad" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+    <linearGradient id="favBallGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#818CF8" />
+    </linearGradient>
+  </defs>
+  
+  <g transform="translate(1, 1)">
+    <path d="M 15,4 L 4,26 C 3.5,27 4.2,28 5.2,28 L 24.8,28 C 25.8,28 26.5,27 26,26 L 15,4 Z" fill="url(#favVelocityGrad)" />
+    <path d="M 15,4 L 15,28" stroke="#1E1B4B" stroke-width="1.5" opacity="0.25" stroke-linecap="round" />
+    <path d="M 4,24 C 3,14 13,6 23,10" stroke="#06B6D4" stroke-width="2.2" stroke-linecap="round" fill="none" />
+    <circle cx="23" cy="10" r="4.2" fill="url(#favBallGrad)" />
+    <path d="M 21,8.5 A 4.2,4.2 0 0,0 24,12.5" stroke="#FFF" stroke-width="0.5" fill="none" opacity="0.8" />
+  </g>
+</svg>

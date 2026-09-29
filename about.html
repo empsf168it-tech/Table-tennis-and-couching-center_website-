@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Velocity TT Coaching Center</title>
+    <meta name="description"
+        content="Learn about the Velocity TT Coaching Center, our mission, vision, coaching philosophy, achievements, and professional indoor facilities.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;430&family=Poppins:wght@500;540;580&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=1.1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195 50" width="195" height="50" style="height: 40px; width: auto; max-width: 195px;">
+                    <defs>
+                        <linearGradient id="velocityGrad" x1="0" y1="1" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#4F46E5" />
+                            <stop offset="100%" stop-color="#8B5CF6" />
+                        </linearGradient>
+                        <linearGradient id="ballGrad" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#FFFFFF" />
+                            <stop offset="40%" stop-color="#E0E7FF" />
+                            <stop offset="100%" stop-color="#818CF8" />
+                        </linearGradient>
+                        <linearGradient id="trailGrad" x1="0" y1="1" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.15" />
+                            <stop offset="100%" stop-color="#06B6D4" stop-opacity="1" />
+                        </linearGradient>
+                        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#4F46E5" flood-opacity="0.4" />
+                        </filter>
+                    </defs>
+                    <g transform="translate(4, 2)">
+                        <path d="M 22,7 L 7,35 C 6.5,36 7.2,37.5 8.3,37.5 L 35.7,37.5 C 36.8,37.5 37.5,36 37,35 L 22,7 Z" fill="url(#velocityGrad)" />
+                        <path d="M 22,12 L 12,34 L 32,34 Z" fill="#1E1B4B" opacity="0.18" />
+                        <path d="M 22,7 L 22,37.5" stroke="var(--surface)" stroke-width="2.2" opacity="0.4" stroke-linecap="round" />
+                        <path d="M 5,34 C 4,18 18,8 33,14" stroke="url(#trailGrad)" stroke-width="2.8" stroke-linecap="round" fill="none" />
+                        <circle cx="33" cy="14" r="5" fill="url(#ballGrad)" filter="url(#glow)" />
+                        <path d="M 30.5,12 A 5,5 0 0,0 34,17" stroke="#FFF" stroke-width="0.6" fill="none" opacity="0.8" />
+                    </g>
+                    <text x="50" y="24" font-family="'Poppins', sans-serif" font-weight="800" font-size="14.5" fill="var(--text)" letter-spacing="1">VELOCITY TT</text>
+                    <text x="50" y="38" font-family="'Poppins', sans-serif" font-weight="600" font-size="8.2" fill="#8B5CF6" letter-spacing="1.2">COACHING CENTER</text>
+                </svg>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home 1</a>
+                <a href="home2.html">Home 2</a>
+                <a href="about.html" class="active">About Us</a>
+                <a href="plans.html">Memberships</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <div class="nav-controls-group">
+                    <button id="rtl-toggle" class="control-btn" title="Toggle RTL/LTR">RTL</button>
+                    <div class="control-separator"></div>
+                    <button id="theme-toggle" class="control-btn" title="Toggle Theme">
+                        <i data-lucide="sun" class="theme-icon-sun"></i>
+                        <i data-lucide="moon" class="theme-icon-moon"></i>
+                    </button>
+                </div>
+                <button id="mobile-menu-btn" class="toggle-btn mobile-only" title="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <button id="mobile-menu-close" class="close-menu-btn" title="Close Menu">
+            <i data-lucide="x"></i>
+        </button>
+        <nav class="mobile-nav-links">
+            <a href="index.html">Home 1</a>
+            <a href="home2.html">Home 2</a>
+            <a href="about.html" class="active">About Us</a>
+            <a href="plans.html">Memberships</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Section 1: Hero (Center Aligned) -->
+    <section class="hero" style="min-height: 48vh; padding: 120px 0 60px; display: flex; align-items: center; justify-content: center; text-align: center;">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1511067007398-7e4b90cfa4bc?auto=format&fit=crop&q=80&w=2000');"></div>
+        <div class="container">
+            <div class="hero-content" style="margin: 0 auto; text-align: center;">
+                <h1>Our Mission: <br><span style="color: var(--accent);">Create Champions.</span></h1>
+                <p>We build technical mastery, mental resilience, and sportsmanship in players of all ages through professional, structured table tennis coaching.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Club Story -->
+    <section>
+        <div class="container">
+            <div class="grid about-grid reveal" style="align-items: center; gap: 4rem;">
+                <div>
+                    <h2 style="font-size: 2.5rem;">Born from a Passion for the Sport</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Founded in 2020 by former national athletes, Velocity TT Coaching Center started with a mission to make elite sports coaching accessible to everyone. We noticed a lack of structured developmental setups for beginners and competitive players alike, and set out to bridge the gap.</p>
+                    <p style="color: var(--text-muted);">Today, we have grown into a premier sports training facility featuring over 20 ITTF-approved tables, 12 certified coaches, and an active division of competitive league teams. Our alumni have gone on to win state championships and represent national youth teams.</p>
+                </div>
+                <div>
+                    <img src="https://t4.ftcdn.net/jpg/10/08/51/85/360_F_1008518526_vditLHqfuUj7ZuC1LfCmsu89ViuLv3no.jpg" alt="Velocity Match Practice"
+                        style="width: 100%; border-radius: 32px; box-shadow: var(--shadow);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Supporting Cards (Values & Philosophy) -->
+    <section style="background-color: var(--surface);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem;">Core Ideals</h2>
+            </div>
+            <div class="grid grid-3 reveal">
+                <div class="card" style="display: flex; flex-direction: column; text-align: center; height: auto;">
+                    <div
+                        style="background: rgba(230, 57, 70, 0.1); width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--primary);">
+                        <i data-lucide="target" size="32"></i>
+                    </div>
+                    <h3 style="min-height: 3.5rem;">Our Mission</h3>
+                    <p style="color: var(--text-muted); flex-grow: 1;">To provide elite table tennis training that inspires discipline, enhances technical mechanics, and cultivates high competitive performance.</p>
+                </div>
+                <div class="card" style="display: flex; flex-direction: column; text-align: center; height: auto;">
+                    <div class="vision-icon"
+                        style="background: rgba(29, 53, 87, 0.1); width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--primary);">
+                        <i data-lucide="eye" size="32"></i>
+                    </div>
+                    <h3 style="min-height: 3.5rem;">Our Vision</h3>
+                    <p style="color: var(--text-muted); flex-grow: 1;">To become the leading athletic nursery for Olympic-level table tennis talent and foster a vibrant local club community.</p>
+                </div>
+                <div class="card" style="display: flex; flex-direction: column; text-align: center; height: auto;">
+                    <div
+                        style="background: rgba(244, 162, 97, 0.1); width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; color: var(--primary);">
+                        <i data-lucide="brain" size="32"></i>
+                    </div>
+                    <h3 style="min-height: 3.5rem;">Coaching Philosophy</h3>
+                    <p style="color: var(--text-muted); flex-grow: 1;">We utilize a modern, data-driven approach combining stroke video analysis, tactical pattern drills, and mental focus training.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Coaching Staff (Achievements & Overview) -->
+    <section>
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 style="font-size: 2.5rem;">Academy Head Coaches</h2>
+            </div>
+            <div class="grid grid-3 reveal">
+                <div style="text-align: center;">
+                    <img src="https://i.pravatar.cc/300?u=a" alt="Coach Marcus"
+                        style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; border: 5px solid var(--primary);">
+                    <h3>Marcus Thorne</h3>
+                    <p style="color: var(--primary); font-weight: 700;">Head Coach (ITTF Level 3)</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="https://i.pravatar.cc/300?u=b" alt="Coach Elena" class="elena-img"
+                        style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; border: 5px solid var(--primary);">
+                    <h3>Elena Rodriguez</h3>
+                    <p class="elena-role" style="color: var(--secondary); font-weight: 700;">Youth Director (ITTF Level 2)</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="https://i.pravatar.cc/300?u=c" alt="Coach Sam"
+                        style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin-bottom: 1.5rem; border: 5px solid var(--primary);">
+                    <h3>Samual Jenkins</h3>
+                    <p style="color: var(--accent); font-weight: 700;">Tactical Analyst (ITTF Level 2)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: CTA/Info -->
+    <section style="background-color: var(--surface);">
+        <div class="container">
+            <div class="reveal" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Experience Our Facilities</h2>
+                <p style="color: var(--text-muted); margin-bottom: 2rem;">Want to test your limits or looking to start a new hobby? Come down for our weekend open play session or register for a private training trial today.</p>
+                <div class="about-cta-buttons" style="display: flex; gap: 1rem; justify-content: center;">
+                    <a href="contact.html" class="btn btn-primary">Book a Trial Session</a>
+                    <a href="plans.html" class="btn btn-outline">View Membership Plans</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- Footer CTA -->
+            <div class="footer-cta reveal">
+                <div>
+                    <h2>Ready to Train Like a Champion?</h2>
+                    <p>Register online today and book your free skill assessment session!</p>
+                </div>
+                <a href="contact.html" class="btn"
+                    style="background: white; color: var(--primary); padding: 1rem 2rem; font-size: 1.1rem;">Book a Trial Session</a>
+            </div>
+
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                        <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 195 50" width="195" height="50" style="height: 40px; width: auto; max-width: 195px;">
+                    <defs>
+                        <linearGradient id="velocityGrad" x1="0" y1="1" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#4F46E5" />
+                            <stop offset="100%" stop-color="#8B5CF6" />
+                        </linearGradient>
+                        <linearGradient id="ballGrad" x1="0" y1="0" x2="1" y2="1">
+                            <stop offset="0%" stop-color="#FFFFFF" />
+                            <stop offset="40%" stop-color="#E0E7FF" />
+                            <stop offset="100%" stop-color="#818CF8" />
+                        </linearGradient>
+                        <linearGradient id="trailGrad" x1="0" y1="1" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.15" />
+                            <stop offset="100%" stop-color="#06B6D4" stop-opacity="1" />
+                        </linearGradient>
+                        <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#4F46E5" flood-opacity="0.4" />
+                        </filter>
+                    </defs>
+                    <g transform="translate(4, 2)">
+                        <path d="M 22,7 L 7,35 C 6.5,36 7.2,37.5 8.3,37.5 L 35.7,37.5 C 36.8,37.5 37.5,36 37,35 L 22,7 Z" fill="url(#velocityGrad)" />
+                        <path d="M 22,12 L 12,34 L 32,34 Z" fill="#1E1B4B" opacity="0.18" />
+                        <path d="M 22,7 L 22,37.5" stroke="var(--surface)" stroke-width="2.2" opacity="0.4" stroke-linecap="round" />
+                        <path d="M 5,34 C 4,18 18,8 33,14" stroke="url(#trailGrad)" stroke-width="2.8" stroke-linecap="round" fill="none" />
+                        <circle cx="33" cy="14" r="5" fill="url(#ballGrad)" filter="url(#glow)" />
+                        <path d="M 30.5,12 A 5,5 0 0,0 34,17" stroke="#FFF" stroke-width="0.6" fill="none" opacity="0.8" />
+                    </g>
+                    <text x="50" y="24" font-family="'Poppins', sans-serif" font-weight="800" font-size="14.5" fill="var(--text)" letter-spacing="1">VELOCITY TT</text>
+                    <text x="50" y="38" font-family="'Poppins', sans-serif" font-weight="600" font-size="8.2" fill="#8B5CF6" letter-spacing="1.2">COACHING CENTER</text>
+                </svg>
+                    </a>
+                    <p style="color: var(--text-muted);">Helping players of every age improve technique, confidence, and competitive performance through expert table tennis coaching.</p>
+                    <div style="display: flex; gap: 0.75rem; margin-top: 1.5rem;">
+                        <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="home2.html">Home 2</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="plans.html">Memberships</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Programs</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="plans.html">Beginner Coaching</a></li>
+                        <li><a href="plans.html">Junior Development</a></li>
+                        <li><a href="plans.html">Advanced Training</a></li>
+                        <li><a href="plans.html">Weekend Clinics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Resources</h4>
+                    <ul style="list-style: none;">
+                        <li><a href="about.html">Club Facilities</a></li>
+                        <li><a href="home2.html">League Schedule</a></li>
+                        <li><a href="plans.html">Common FAQs</a></li>
+                        <li><a href="contact.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Velocity TT Coaching Center. All rights reserved. | <a href="#" style="text-decoration: underline;">Terms of Service</a> | <a href="#" style="text-decoration: underline;">Privacy Policy</a></p>
+                <a href="#" class="back-to-top" title="Back to Top">
+                    <i data-lucide="arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
